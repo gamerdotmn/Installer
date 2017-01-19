@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="create" xml:space="preserve">
+    <value>CREATE DATABASE [mastercafedb];
+</value>
+  </data>
+  <data name="dbcfg" xml:space="preserve">
+    <value>USE [mastercafedb];
+EXEC dbo.sp_dbcmptlevel @dbname=N'mastercafedb', @new_cmptlevel=90;
+ALTER DATABASE [mastercafedb] SET ANSI_NULL_DEFAULT OFF;
+ALTER DATABASE [mastercafedb] SET ANSI_NULLS OFF;
+ALTER DATABASE [mastercafedb] SET ANSI_PADDING OFF; 
+ALTER DATABASE [mastercafedb] SET ANSI_WARNINGS OFF;
+ALTER DATABASE [mastercafedb] SET ARITHABORT OFF;
+ALTER DATABASE [mastercafedb] SET AUTO_CLOSE OFF;
+ALTER DATABASE [mastercafedb] SET AUTO_CREATE_STATISTICS ON;
+ALTER DATABASE [mastercafedb] SET AUTO_SHRINK OFF;
+ALTER DATABASE [mastercafedb] SET AUTO_UPDATE_STATISTICS ON;
+ALTER DATABASE [mastercafedb] SET CURSOR_CLOSE_ON_COMMIT OFF;
+ALTER DATABASE [mastercafedb] SET CURSOR_DEFAULT  GLOBAL;
+ALTER DATABASE [mastercafedb] SET CONCAT_NULL_YIELDS_NULL OFF;
+ALTER DATABASE [mastercafedb] SET NUMERIC_ROUNDABORT OFF;
+ALTER DATABASE [mastercafedb] SET QUOTED_IDENTIFIER OFF;
+ALTER DATABASE [mastercafedb] SET RECURSIVE_TRIGGERS OFF; 
+ALTER DATABASE [mastercafedb] SET AUTO_UPDATE_STATISTICS_ASYNC OFF;
+ALTER DATABASE [mastercafedb] SET DATE_CORRELATION_OPTIMIZATION OFF; 
+ALTER DATABASE [mastercafedb] SET PARAMETERIZATION SIMPLE; 
+ALTER DATABASE [mastercafedb] SET  READ_WRITE; 
+ALTER DATABASE [mastercafedb] SET RECOVERY SIMPLE; 
+ALTER DATABASE [mastercafedb] SET  MULTI_USER; 
+ALTER DATABASE [mastercafedb] SET PAGE_VERIFY CHECKSUM;  
+USE [mastercafedb];
+IF NOT EXISTS (SELECT name FROM sys.filegroups WHERE is_default=1 AND name = N'PRIMARY') ALTER DATABASE [mastercafedb] MODIFY FILEGROUP [PRIMARY] DEFAULT;</value>
+  </data>
+  <data name="generate" xml:space="preserve">
+    <value>USE [mastercafedb];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[member](
+	[name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[password] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[stock] [int] NOT NULL,
+	[ot] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_member_1] PRIMARY KEY CLUSTERED 
+(
+	[name] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[timecode](
+	[code] [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[stock] [int] NOT NULL,
+	[ot] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_timecode] PRIMARY KEY CLUSTERED 
+(
+	[code] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[ban](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[word] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_ban] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[hourtemplate](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[minute] [int] NOT NULL,
+	[price] [int] NOT NULL,
+	[beghour] [int] NOT NULL,
+	[endhour] [int] NOT NULL,
+ CONSTRAINT [PK_timetemplate] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[employee](
+	[name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[password] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[isadmin] [bit] NOT NULL,
+ CONSTRAINT [PK_employee_1] PRIMARY KEY CLUSTERED 
+(
+	[name] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[config](
+	[org_name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[org_password] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[client_password] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[client_user] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[newmember_price] [int] NULL,
+	[newmember_stock] [int] NULL,
+	[vat_include] [bit] NULL,
+	[vat_register] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[vat_companyname] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[vat_districcode] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[vat_billid] [int] NULL,
+	[close_hour] [int] NULL,
+	[printer_price] [int] NULL,
+	[alert_minute] [int] NULL,
+	[alert_message] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[idle_minute] [int] NULL,
+	[autoupdate] [bit] NULL,
+ CONSTRAINT [PK_config] PRIMARY KEY CLUSTERED 
+(
+	[org_name] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[groups](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[timecodeprice] [int] NOT NULL,
+	[memberprice] [int] NOT NULL,
+	[hourprice] [int] NOT NULL,
+	[timecode] [bit] NOT NULL,
+	[member] [bit] NOT NULL,
+	[hour] [bit] NOT NULL,
+	[prepairhour] [bit] NOT NULL,
+	[minprice] [int] NOT NULL,
+ CONSTRAINT [PK_group] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[category](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[name] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_category] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[employee_member](
+	[id] [int] IDENTITY(1,1) NOT NULL,
+	[employee_name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[member_name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[price] [int] NOT NULL,
+	[ot] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_employee_member_1] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[client_member](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[client_name] [nvarchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[member_name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[stock] [int] NOT NULL,
+	[begint] [smalldatetime] NOT NULL,
+	[endt] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_client_member] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[employee_timecode](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[employee_name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[price] [int] NOT NULL,
+	[timecode_code] [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ot] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_employee_timecode] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[client_timecode](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[client_name] [nvarchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[timecode_code] [nchar](10) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[stock] [int] NOT NULL,
+	[begint] [smalldatetime] NOT NULL,
+	[endt] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_client_timecode] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[employee_hour](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[employee_name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[client_name] [nvarchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[price] [int] NOT NULL,
+	[ot] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_employee_hour] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[employee_sale](
+	[id] [int] NOT NULL,
+	[item_id] [int] NOT NULL,
+	[qnt] [int] NOT NULL,
+	[price] [int] NOT NULL,
+	[total] [int] NOT NULL,
+	[empoyee_name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ot] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_sale] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[client](
+	[name] [nvarchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[ip] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[mac] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[group_id] [int] NOT NULL,
+	[status] [int] NOT NULL,
+	[data] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_client] PRIMARY KEY CLUSTERED 
+(
+	[name] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[item](
+	[id] [int] NOT NULL,
+	[name] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[category_id] [int] NOT NULL,
+	[price] [int] NOT NULL,
+ CONSTRAINT [PK_item] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+SET ANSI_NULLS ON;
+SET QUOTED_IDENTIFIER ON;
+CREATE TABLE [dbo].[client_hour](
+	[id] [bigint] IDENTITY(1,1) NOT NULL,
+	[client_name] [nvarchar](128) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[stock] [int] NOT NULL,
+	[begint] [smalldatetime] NOT NULL,
+	[endt] [smalldatetime] NOT NULL,
+ CONSTRAINT [PK_client_hour] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY];
+ALTER TABLE [dbo].[employee_member]  WITH CHECK ADD  CONSTRAINT [FK_employee_member_employee] FOREIGN KEY([employee_name])
+REFERENCES [dbo].[employee] ([name]);
+ALTER TABLE [dbo].[employee_member] CHECK CONSTRAINT [FK_employee_member_employee];
+ALTER TABLE [dbo].[employee_member]  WITH CHECK ADD  CONSTRAINT [FK_employee_member_member] FOREIGN KEY([member_name])
+REFERENCES [dbo].[member] ([name]);
+ALTER TABLE [dbo].[employee_member] CHECK CONSTRAINT [FK_employee_member_member];
+ALTER TABLE [dbo].[client_member]  WITH CHECK ADD  CONSTRAINT [FK_client_member_client] FOREIGN KEY([client_name])
+REFERENCES [dbo].[client] ([name])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[client_member] CHECK CONSTRAINT [FK_client_member_client];
+ALTER TABLE [dbo].[client_member]  WITH CHECK ADD  CONSTRAINT [FK_client_member_member] FOREIGN KEY([member_name])
+REFERENCES [dbo].[member] ([name]);
+ALTER TABLE [dbo].[client_member] CHECK CONSTRAINT [FK_client_member_member];
+ALTER TABLE [dbo].[employee_timecode]  WITH CHECK ADD  CONSTRAINT [FK_employee_timecode_employee] FOREIGN KEY([employee_name])
+REFERENCES [dbo].[employee] ([name]);
+ALTER TABLE [dbo].[employee_timecode] CHECK CONSTRAINT [FK_employee_timecode_employee];
+ALTER TABLE [dbo].[employee_timecode]  WITH CHECK ADD  CONSTRAINT [FK_employee_timecode_timecode] FOREIGN KEY([timecode_code])
+REFERENCES [dbo].[timecode] ([code])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[employee_timecode] CHECK CONSTRAINT [FK_employee_timecode_timecode];
+ALTER TABLE [dbo].[client_timecode]  WITH CHECK ADD  CONSTRAINT [FK_client_timecode_client] FOREIGN KEY([client_name])
+REFERENCES [dbo].[client] ([name])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[client_timecode] CHECK CONSTRAINT [FK_client_timecode_client];
+ALTER TABLE [dbo].[client_timecode]  WITH CHECK ADD  CONSTRAINT [FK_client_timecode_timecode] FOREIGN KEY([timecode_code])
+REFERENCES [dbo].[timecode] ([code])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[client_timecode] CHECK CONSTRAINT [FK_client_timecode_timecode];
+ALTER TABLE [dbo].[employee_hour]  WITH CHECK ADD  CONSTRAINT [FK_employee_hour_client] FOREIGN KEY([client_name])
+REFERENCES [dbo].[client] ([name])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[employee_hour] CHECK CONSTRAINT [FK_employee_hour_client];
+ALTER TABLE [dbo].[employee_hour]  WITH CHECK ADD  CONSTRAINT [FK_employee_hour_employee] FOREIGN KEY([employee_name])
+REFERENCES [dbo].[employee] ([name]);
+ALTER TABLE [dbo].[employee_hour] CHECK CONSTRAINT [FK_employee_hour_employee];
+ALTER TABLE [dbo].[employee_sale]  WITH CHECK ADD  CONSTRAINT [FK_employee_sale_employee] FOREIGN KEY([empoyee_name])
+REFERENCES [dbo].[employee] ([name]);
+ALTER TABLE [dbo].[employee_sale] CHECK CONSTRAINT [FK_employee_sale_employee];
+ALTER TABLE [dbo].[employee_sale]  WITH CHECK ADD  CONSTRAINT [FK_sale_item] FOREIGN KEY([item_id])
+REFERENCES [dbo].[item] ([id])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[employee_sale] CHECK CONSTRAINT [FK_sale_item];
+ALTER TABLE [dbo].[client]  WITH CHECK ADD  CONSTRAINT [FK_client_groups] FOREIGN KEY([group_id])
+REFERENCES [dbo].[groups] ([id])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[client] CHECK CONSTRAINT [FK_client_groups];
+ALTER TABLE [dbo].[item]  WITH CHECK ADD  CONSTRAINT [FK_item_category] FOREIGN KEY([category_id])
+REFERENCES [dbo].[category] ([id])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[item] CHECK CONSTRAINT [FK_item_category];
+ALTER TABLE [dbo].[client_hour]  WITH CHECK ADD  CONSTRAINT [FK_client_hour_client] FOREIGN KEY([client_name])
+REFERENCES [dbo].[client] ([name])
+ON UPDATE CASCADE
+ON DELETE CASCADE;
+ALTER TABLE [dbo].[client_hour] CHECK CONSTRAINT [FK_client_hour_client];</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="image_1007767" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image_1007767.gif;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="insert" xml:space="preserve">
+    <value>USE [mastercafedb];
+insert into employee values('admin','CgAAAB+LCAAAAAAABADtvQdgHEmWJSYvbcp7f0r1StfgdKEIgGATJNiQQBDswYjN5pLsHWlHIymrKoHKZVZlXWYWQMztnbz33nvvvffee++997o7nU4n99//P1xmZAFs9s5K2smeIYCqyB8/fnwfPyIWWdPm9TQ7z/8fUJ2hAwoAAAA=',1);</value>
+  </data>
+</root>
